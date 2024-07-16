@@ -189,6 +189,24 @@
         <p></p>
     </div>
 
+    <!--
+    * Google debug information:
+    * retrieve some debug information, provided the browser is Chromium-based
+    * more info here: https://twitter.com/lcasdev/status/1810696257137959018
+    * and here: https://github.com/chromium/chromium/blob/128.0.6586.1/chrome/browser/resources/hangout_services/thunk.js#L219
+    * written by: @djnnvx
+    -->
+
+     <div class="user_agent">
+        <h2> Chrome debug information </h2>
+        <p class="desc brief"> @brief</p>
+        <p class="desc"> - Provided the browser is Chrome-based, fetch additional device information </p>
+        <p></p>
+
+        <p id="user_agent_result"> ... </p>
+        <p></p>
+    </div>
+
     <!-- WS Lateral scan,  -->
     <!-- TODO: To be made  -->
 
@@ -230,7 +248,6 @@
         CALCULATOR_BTN.addEventListener( "click", function(){
             window.location = CALCULATOR.value;
         });
-
 
         // Helper functions
         function copyToClipboard(text) {
